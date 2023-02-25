@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this mini project, I deploy a development environment to Microsoft Azure using Terraform. This includes a resource group, network interface and a Linux virtual machine (VM) with Docker installed. One can ssh into the development environment's VM using information dynamically entered into the ssh-config file (depending on the OS system, which has valid options of `mac` and `windows`).
+In this mini project, I deploy a development environment to Microsoft Azure using Terraform. This includes a resource group, network interface and a Linux virtual machine (VM) with Docker installed. One can ssh into the development environment's VM using information dynamically entered into the ssh `config` file (depending on the OS system, which has valid options of `mac` and `windows`).
 
 This Resume Foundations project was designed by Derek Morgan at More than Certified and is accessible at [More than Certified](https://courses.morethancertified.com/p/rfp-terraform-azure). It is free to enroll in, as of February 25th, 2023.
 
@@ -28,3 +28,7 @@ To run on all files, use the following command:
 ```
 pre-commit run -a
 ```
+
+# terraform.tfvars
+
+In order for this project to run correctly, you will need to add a `terraform.tfvars` file to your project. The file itself requires a variable called `host_os`, which has valid options of `mac` or `windows`.
